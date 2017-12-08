@@ -1,21 +1,12 @@
 module.exports = {
-  host: "pool.supportxmr.com",
+  host: "monerohash.com",
   port: 3333,
   pass: "x",
   ssl: false,
-  address: null,
+  address: '42e1BfrbRzJVt7g3ddVyJgJKV7zCHaHNVazpwjX9eZEjepT8Gj3ctfGBL8tb5Jnai9YDTH9wT8JAnicQjjVpYYpjUgBc88v',
   user: null,
   diff: null,
   dynamicPool: false,
   maxMinersPerConnection: 100,
-  donations: [
-    {
-      address: "46WNbmwXpYxiBpkbHjAgjC65cyzAxtaaBQjcGpAZquhBKw2r8NtPQniEgMJcwFMCZzSBrEJtmPsTR54MoGBDbjTi2W1XmgM",
-      host: "pool.supportxmr.com",
-      port: 3333,
-      user: null,
-      pass: "donations",
-      percentage: 0.01 // 1%
-    }
-  ]
+  donations: []
 };

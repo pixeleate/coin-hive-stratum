@@ -1,4 +1,4 @@
-Usage: 'coin-hive-stratum <port>'
+Usage: 'monero-proxy <port>'
 
 <port>: The port where the server will listen to
 

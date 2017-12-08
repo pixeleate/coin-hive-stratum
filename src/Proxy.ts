@@ -103,6 +103,17 @@ class Proxy extends EventEmitter {
           error: "Not Found"
         });
 
+        if (url.pathname === "/") {
+          body = JSON.stringify(
+            {
+              message: 'monero-proxy',
+              state: 'running'
+            },
+            null,
+            2
+          )
+        } 
+
         if (url.pathname === "/stats") {
           body = JSON.stringify(
             {
@@ -195,7 +206,7 @@ class Proxy extends EventEmitter {
     } else {
       this.server.listen(port, host, callback);
     }
-    console.log(`coin-hive-stratum v${require("../package").version}`);
+    console.log(`monero-proxy v${require("../package").version}`);
     console.log(`listening on port ${port}` + (isHTTPS ? ", using a secure connection" : ""));
     if (wssOptions.path) {
       console.log(`path: ${wssOptions.path}`);
